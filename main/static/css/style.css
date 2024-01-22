@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-color: #1D1D1B;
+    --bg-card: #2D2D2B;
+    --text-color1: #FCE2DB;
+    --text-color2: #432C7A;
+}
+
+* {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Custom elements */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: linear-gradient(45deg, #80489C, #FCE2DB);
+    background-size: 400px 400px;
+    border: 0;
+    border-radius: 20px;
+
+    color: var(--text-color2);
+    font-weight: 700;
+    font-size: 18px;
+
+    width: 10vw;
+    min-width: 150px;
+    height: 50px;
+
+    margin: 10px 10px;
+    transition: 100ms ease-in-out;
+}
+
+button:hover {
+    scale: 105%;
+    transition: 100ms ease-in-out;
+}
+
+/* Homepage | custom elements */
+
+.logo {
+    width: 300px;
+    height: 300px;
+}
+
+.logo-section {
+    background-image: url("/static/imgs/waves.svg");
+    background-repeat: repeat-x;
+
+    width: 100vw;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.down-arrow {
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.down-arrow h1 {
+    width: 100vw;
+    text-align: center;
+}
+
+.down-arrow a {
+    text-decoration: none;
+    color: var(--text-color1);
+    transition: 100ms ease-in-out;
+}
+
+.down-arrow a:hover {
+    font-size: 40px;
+}
+
+.menu {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+    }
+}
+
+/* Secondary pages | default elements */
+
+.navbar {
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    background: linear-gradient(45deg, #80489C, #FCE2DB);
+    background-size: 400px 400px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-right: 20px;
+    font-size: 20px;
+    min-width: 100px;
+}
+
+.card-list {
+    width: 100vw;
+    min-height: 90vh;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1080px) {
+    .card-list {
+        flex-direction: column;
+    }
+}
+
+.card-title {
+    background: linear-gradient(45deg, #80489C, #FCE2DB);
+    background-size: 400px 400px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    position: relative;
+    top: -80px;
+    left: 50px;
+}
+
+.card-paragraph {
+    color: var(--text-color1);
+
+    position: relative;
+    top: -10px;
+    left: 0px;
+
+    width: 80%;
+}
+
+/* Trucchi page | custom elements */
+
+.cheat-card {
+    background-color: var(--bg-card);
+    border-radius: 20px;
+
+    width: 400px;
+    height: 300px;
+
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cheat-img {
+    position: relative;
+    top: 0px;
+    left: -125px;
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 20px;
+}
+
+.cheat-card > button {
+    position: relative;
+    bottom: -10px;
+}
+
+/* Staff page | custom elements */
+
+.staff-card {
+    background-color: var(--bg-card);
+    border-radius: 20px;
+
+    width: 400px;
+    height: 300px;
+
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.staff-img {
+    position: relative;
+    top: -10px;
+    left: -125px;
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 20px;
+}
+
+/* Generator */
+
+.generator-title {
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.generator-title h1 {
+    background: linear-gradient(45deg, #80489C, #FCE2DB);
+    background-size: 400px 400px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-right: 20px;
+}
+
+.generator {
+    width: 100vw;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.generator .card {
+    background-color: var(--bg-card);
+    border-radius: 20px;
+
+    width: 400px;
+    height: 300px;
+
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.generator .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Custom forms */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    margin: 20px 0;
+}
+
+form label {
+    margin: 0 10px;
+    color: var(--text-color1);
+}
+
+form input {
+    text-align: center;
+
+    width: 150px;
+    height: 40px;
+
+    border-radius: 10px;
+    border: 0;
+
+    color: var(--text-color1);
+    background-color: var(--bg-color);
+}
+
+form input:focus {
+    border-color: var(--text-color2);
+}

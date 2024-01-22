@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>stocazzo | home</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+        <!-- CDNs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="{% static 'js/main.js' %}"></script>
+
+    </head>
+    <body>
+
+        <!-- Title -->
+        <div class="logo-section">
+            <img class="logo" src="{% static 'imgs/logo.png' %}" alt="logo">
+        </div>
+
+        <!-- Down arrow -->
+        <div class="down-arrow">
+            <h1><a href="#menu">V</a></h1>
+        </div>
+        
+        <!-- Navbar -->
+        <div id="menu" class="menu">
+
+            <button onclick="trucchi()">
+                <i class="fa-solid fa-ghost"></i>
+                Trucchi
+            </button>
+
+            <button onclick="github()">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </button>
+
+            <button onclick="staff()">
+                <i class="fa-solid fa-users-viewfinder"></i>
+                Lista staff
+            </button>
+
+            <button onclick="telegram()">
+                <i class="fa-brands fa-telegram"></i>
+                Telegram
+            </button>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>stocazzo | trucchi</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+        <!-- CDNs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="{% static 'js/main.js' %}"></script>
+
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <div class="navbar">
+
+            <button onclick="homepage()">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </button>
+
+            <h1>
+                <i class="fa-solid fa-ghost"></i>
+                Trucchi
+            </h1>
+
+        </div>
+
+        <!-- Cheats -->
+        <div class="card-list">
+
+            <div class="cheat-card">
+                <img class="cheat-img" src="{% static 'imgs/tsclicker.jpeg' %}" alt="tsclicker">
+                <h1 class="card-title">TS Clicker</h1>
+                <p class="card-paragraph">Un simpatico autoclicker davvero difficile da trovare, ideale per burlare gli staff e per magheggiare sui server più L</p>
+                <button onclick="tsclicker()">Download</button>
+            </div>
+
+            <div class="cheat-card">
+                <img class="cheat-img" src="{% static 'imgs/bestclicker.jpeg' %}" alt="bestclicker">
+                <h1 class="card-title">best Clicker</h1>
+                <p class="card-paragraph">L'autoclicker perfetto per burlare gli staffer, controllato con il telefono e perfetto per praticare il cheating</p>
+                <button onclick="bestclicker()">Download</button>
+            </div>
+
+        </div>
+    </body>
+</html>
